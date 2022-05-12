@@ -1,0 +1,75 @@
+# 함수 설명
+
+* createEmployee  
+  * 직원 정보 입력
+  * 출근시간, 퇴근시간, 휴식시간 입력
+  * 날짜입력 - '/'기준으로 월, 일 저장
+  * 시간입력 - ':'기준으로 시간, 분 저장   
+  <img width="412" alt="createEmployee" src="https://user-images.githubusercontent.com/103670794/167250567-d4e76057-bd97-447e-8edb-fd3b5b624ea7.PNG">
+---           
+* readEmployee, listEmployee 
+  * 입력한 직원 정보 print
+  * readEmployee함수는 해당 직원하나만 보여줌
+  * listEmployee함수는 전체 직원을 보여줌
+  <img width="526" alt="readEmployee" src="https://user-images.githubusercontent.com/103670794/167250799-2a2126a6-3f6b-4471-b03e-c97967b234ad.PNG">
+  ---           
+* updateEmployee
+  * 직원 정보 수정
+  * listEmployee함수를 통해 직원을 보여주고 해당 번호 선택하고 수정
+  * 수정   
+  <img width="460" alt="before_updateEmployee" src="https://user-images.githubusercontent.com/103670794/167250836-50f2e884-3e2e-41cb-b031-46f27a1a6c11.PNG"> 
+   
+    * 수정 후  
+  <img width="435" alt="after_updateEmployee" src="https://user-images.githubusercontent.com/103670794/167250890-77de315a-faef-446a-ae93-240c467a3e31.PNG">
+  --- 
+* deleteEmployee
+  * 해당 직원 정보 삭제
+  * listEmployee함수를 통해 직원을 보여주고 해당 번호 선택하고 삭제
+  * 삭제 전  
+  <img width="395" alt="before_deleteEmployee" src="https://user-images.githubusercontent.com/103670794/167250956-5c5a7045-892b-40de-92a3-a46895062383.PNG">
+   
+  * 삭제 후   
+  <img width="425" alt="after_deleteEmployee" src="https://user-images.githubusercontent.com/103670794/167250965-a64ce7dc-a62e-4ece-bf6d-bc5cfca589ee.PNG">  
+  --- 
+* saveData
+  * 입력한 직원 정보 저장  
+  <img width="258" alt="saveData" src="https://user-images.githubusercontent.com/103670794/167251079-e7c247ea-2554-45ba-9103-006e78f27625.PNG">
+--- 
+* loadData
+  * 실행파일을 시작할 때 저장한 파일이 있으면 불러오기  
+<img width="430" alt="loadData" src="https://user-images.githubusercontent.com/103670794/167251120-d9f46e9c-46e2-44d8-8153-28de2564e09b.PNG">
+  --- 
+* showInTime
+  * 출근 시간 통계 중, 날짜 상관없이 볼지 특정 날짜 하루에 대한 출근 통계를 볼지 묻는 문구 출력
+  * showInTime 함수는 모든 출근 시간을 한시간 간격으로 결과 보여주기
+  * A 직원이 5/7일 06:00 출근, B 직원이 5/8일 06:00 출근시 출근 통계 보는 메뉴를 선택하면 두 직원이 모두 6시~7시에 출근한 것으로 나옴.
+  <img width="693" alt="showInTime" src="https://user-images.githubusercontent.com/103383155/167297315-aaa6e319-1f1a-4375-8a07-75a00d72cf2c.png">
+---
+* showInTime_date
+  * 출근 시간 통계 중, 날짜 상관없이 볼지 특정 날짜 하루에 대한 출근 통계를 볼지 묻는 문구 출력
+  * showInTime_date 함수는 출근 시간 통계 중, 특정 날짜에만 통계 결과 보여주기
+  * 관리자로부터 통계 보고싶은 날짜 입력받기
+  * ex) A 직원이 5/7일 06:00 출근, B 직원이 5/8일 06:00 출근 상황에서, 출근 통계를 보는 메뉴를 선택하면 먼저 보고싶은 날짜를 선택하게 하고, 이때 관리자가 5/7을 입력하면 5/7일에 입력된 A 직원만 6~7시에 출근한 것으로 나옴.
+  <img width="693" alt="showInTime_date" src="https://user-images.githubusercontent.com/103383155/167297129-177f10a2-5eed-4664-bd78-ac56ace4d2ff.png">
+  ---
+* showOutTime
+  * 퇴근 시간 통계 중, 날짜 상관없이 볼지 특정 날짜 하루에 대한 퇴근 통계를 볼지 묻는 문구 출력
+  * showOutTime 함수는 모든 퇴근 시간을 한시간 간격으로 결과 보여주기
+  <img width="693" alt="showOutTime" src="https://user-images.githubusercontent.com/103383155/167297366-ab6f73c3-3b88-4169-8804-643cbbcb0ed0.png">
+---
+* showOutTime_date
+  * 퇴근 시간 통계 중, 날짜 상관없이 볼지 특정 날짜 하루에 대한 퇴근 통계를 볼지 묻는 문구 출력
+  * showOutTime_date 함수는 퇴근 시간 통계 중, 특정 날짜에만 통계 결과 보여주기
+  * 관리자로부터 통계 보고싶은 날짜 입력받기
+<img width="693" alt="showOutTime_date" src="https://user-images.githubusercontent.com/103383155/167297399-827f91c2-8f6e-4a57-b436-3daf88805462.png">
+---
+* searchTime
+  * 직원 출퇴근 시간 검색 기능
+  * 직원의 이름을 입력하면, 해당 직원의 출퇴근 시간, 휴게시간에 대한 정보가 출력된다.
+<img width="693" alt="searchTime" src="https://user-images.githubusercontent.com/103383155/167297466-07437e9b-7c59-472f-b7a5-6eb737d7995a.png">
+—
+* calculateDailyWage
+  * 직원 일급 계산 기능
+  * 직원의 이름을 입력하면, 최저시급으로 보았을 때, 해당 직원이 일한 시간(분은 생각하지 않는다)은 총 하루 일급이 얼마인지 계산된다.
+<img width="746" alt="calculateDailyWage" src="https://user-images.githubusercontent.com/103383155/167297525-5a2ccd58-adc6-4fa4-af32-d340a222af05.png">
+  
